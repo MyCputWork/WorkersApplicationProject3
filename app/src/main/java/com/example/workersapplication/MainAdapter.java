@@ -45,9 +45,9 @@ public class MainAdapter extends FirebaseRecyclerAdapter<OrderModel, MainAdapter
 
         Glide.with(holder.img.getContext())
                 .load(model.getImgUrl())
-                .placeholder(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark)
+                .placeholder(R.drawable.profilepic)
                 .circleCrop()
-                .error(R.drawable.ic_launcher_background)
+                .error(R.drawable.profilepic)
                 .into(holder.img);
 
         holder.btnComplete.setOnClickListener(new View.OnClickListener() {
